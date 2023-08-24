@@ -4,6 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas HTML</title>
+    <!--  Folha de Estilo Interna/Onpage -->
+   
+    <style>
+
+        h1 { color: red;}
+
+        /* Diferente do CSS inline, aqui o style não é um atributo e sim uma tag, sendo assim, para acrescentar alguma alteração ao seu HTML é necessario estar dentrro da tag style que deve estar OBRIGATORIAMENTE dentro da tag head. Apos o seu style, escolha seu seletor tag ( que no caso foi o h1) e faça a sua alteração. */
+
+        h2 { 
+            color: blueviolet;
+            text-transform: uppercase;
+            background-color: lightblue;
+        }
+
+    /* Mini-exercicio ( faça aqui mesmo)
+    Crie uma regra para formatar paragrafos da seguinte maneira:
+    Mude a letra para verdana
+    Mude o tamanho da letra para 20px
+    faça o texto fica em italico
+
+     */
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-style: italic;
+
+
+    }
+
+    .centralizar { text-align: center;}
+
+
+    </style>
+    
+
+
+
+
 </head>
 <body>
 
@@ -12,6 +51,12 @@
 <h1>Trabalhando com Listas</h1>   
 
 <p>Conteudo representado na forma de uma relação de itens</p>
+
+ 
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempora illum, error suscipit nesciunt velit itaque dolorem assumenda repellendus aliquid saepe vero fugit! Dicta perferendis velit libero corrupti neque quis!</p>
+
+<p class="centralizar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem repudiandae quos odio eos. Sed, sequi. Aliquid dolorum doloremque iusto rerum veniam nemo cupiditate, reprehenderit amet atque, quaerat sit facere deserunt.</p>
 
 <h2>Não-ordenada</h2>
 <ul>

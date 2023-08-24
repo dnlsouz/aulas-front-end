@@ -24,4 +24,30 @@ página que queremos formatar.
 as regras vão valer para todas as tags/ elementos desta página.
 
 
+---
+
+### Sobre seletores 
+
+#### Tag
+
+regras criada com seletor do tipo tag, são mais generalista, ou seja, a formatação será aplicadas a todas as tags que "casem" com o seletor.
+
+#### Classe 
+
+Regras criadas com o seletor do tipo classe, são mais versáteis, ou seja, voce desenvolvedor determina onde aplica a classe e sua formatação.
+
+Classes podem ser reutilizadas na mesma página e combinadas com outras 
+classes.
+
+#### ID (Identificador)
+
+Regras criadas com o seletor do tipo ID , são mais versáteis, ou seja, voce desenvolvedor determina onde aplica o ID e sua formatação. **Atenção** você não pode reaproveitar IDs, ou seja, seletor ID deve ser usado SOMENTE PARA UM ELEMENTO por página.
+
+
+
+
+
+
+
+
 
