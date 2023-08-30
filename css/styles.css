@@ -3,10 +3,15 @@
 body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../imagens/watercolor.png);
+    background-attachment: fixed;
 }
 
 
 h1 {
+    animation-name: caindo;
+    animation-duration: 7s;
+
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
     background-color: rgb(52, 89, 145);
@@ -75,6 +80,104 @@ img {max-width: 100%;}
 /* Seletor Descendente */
 
 p a {color: red; }
+
+ul { padding: 20px}
+
+
+
+
+li {
+    list-style-type: square;
+    line-height: 32px;
+}
+
+/*  seletor pseudo-elemento (usa 2x o dois pontos :: */
+
+li::marker {
+    content:"✔ ";
+}
+
+/* Regras para o menu */
+
+nav { text-align: center;}
+
+/* Regra para o estado inicial do link  */
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2412ca;
+    background-color: white;
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+    
+    box-sizing: border-box;
+ /* alterando o box model fazendo com que o padding e border não de b.o nas dimensões finais do elemento! */
+
+}
+
+/* seletor pseudo-classe :first-child */
+
+nav a:first-child{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+nav a:last-child{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+
+
+
+
+
+/* Regra para o estado do link acionado pseudo-classe :hover (passar o mouse)
+ */
+
+ nav a:hover, nav a:focus {
+    background-color: darkblue;
+    color: white;
+ }          
+
+ figure img { 
+    filter: grayscale();
+    transition: 2s;
+    transform: scale(0.5);
+    /* clip-path: circle(50% at 50% 50%); */
+
+ }
+
+ figure img:hover {
+     filter: none;
+     /* clip-path: circle(70.2% at 50% 50%); */
+
+     filter: none;
+     transform: scale(1) rotate(360deg); 
+    
+    }
+
+ /* none = a nada */
+
+ /*  Regras de animação */
+
+ @keyframes caindo {
+    /* como começa: */
+    from { transform: translateY(-100px); 
+           opacity: 0;   
+    }
+
+    /* como termina */
+    to {transform: translateY(0); }
+ }
+
+
+    
+
 
 
 
