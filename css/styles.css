@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Iso&display=swap');
+
 /*  Neste arquivo, faremos todas as regras CSS necessárias para a formatação do site. */
 
 body { 
@@ -12,7 +15,7 @@ h1 {
     animation-duration: 7s;
 
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Rubik Iso', cursive;
     color: #ffffff;
     background-color: rgb(52, 89, 145);
     padding: 10px;
@@ -46,8 +49,10 @@ h2 {
 
 
     #container {
-        background-color: aqua;
+        background-color: rgb(0, 255, 255);
         width: 80%;
+        max-width: 800px;
+        min-width: 500px;
         margin: auto;
         box-shadow: black 0 0 5px; 
         padding: 16px;
@@ -175,6 +180,15 @@ nav a:last-child{
     to {transform: translateY(0); }
  }
 
+ /* PSEUDO-CLASSES CHLD: 
+ :FIRST-CHILD
+ :LAST-CHILD
+ :NTH-CHILD()*/
+
+ li:first-child {color: blue;}
+ li:last-child {color: red;}
+ li:nth-child(3) {color: palevioletred;}
+ 
 
     
 
