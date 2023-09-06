@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Regras de uso geral */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana;
+            background-color: aqua;
+        }
+
+        .container {
+            background-color: aquamarine;
+            box-shadow: black 0 0 5px;
+            padding: 5px;
+        }
+
+        /* CSS Reset (em alguns elementos) */
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        p {
+            padding: 5px 0;
+        }
+
+        h1 {
+            background-color: greenyellow;
+        }
+
+        nav {
+            background-color: palevioletred;
+        }
+
+        article {
+            padding: 8px;
+        }
+
+        #colunaA {
+            background-color: darkolivegreen;
+        }
+
+        #colunaB {
+            background-color: coral;
+        }
+
+        #colunaC {
+            background-color: aliceblue;
+        }
+
+        footer {
+            background-color: aquamarine;
+            height: 100px;
+        }
+
+        @media screen and (min-width: 522px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            h1 {
+                width: 40%;
+            }
+
+            nav {
+                width: 60%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+
+        @media screen  and (min-width: 770px) {
+            #colunaA { width: 70%; } 
+            #colunaB { width: 30%; }
+            #colunaC { width: 100; }
+
+            main {
+                display: flex;
+                /* flex-wrap quando habilitado faz com que os elementos sejam quebrados para a linha de baixo caso não haja espaço  */
+                flex-wrap: wrap;
+            }
+
+        }
+
+        @media screen and (min-width: 1001px) {
+            .container {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            header { 
+                height: 100px;
+            }
+
+            #colunaA, #colunaB, #colunaC {width: 33%;}
+
+            /* Desative o flex-wrap se voce precisa que realmente as colunas se mantenham lado a lado  */
+
+            main {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+        
+            }
+
+        }
+           
+           
+
+     
+            
+        
+            
+        
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1> Exemplo</h1>
+            <nav>
+                <a href=""> link 1</a>
+                <a href=""> link 2</a>
+                <a href=""> link 3</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <article id="colunaA">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias maiores explicabo facilis quidem
+                    exercitationem dolores impedit sit at, dicta fuga vitae, temporibus obcaecati consectetur soluta
+                    fugiat quod eos. Soluta, perferendis.</p>
+            </article>
+
+            <article id="colunaB">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias maiores explicabo facilis quidem
+                    exercitationem dolores impedit sit at, dicta fuga vitae, temporibus obcaecati consectetur soluta
+                    fugiat quod eos. Soluta, perferendis.</p>
+
+
+            </article>
+
+            <article id="colunaC">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias maiores explicabo facilis quidem
+                    exercitationem dolores impedit sit at, dicta fuga vitae, temporibus obcaecati consectetur soluta
+                    fugiat quod eos. Soluta, perferendis.</p>
+
+
+            </article>
+        </main>
+
+        <footer>
+            <h2>Rodapé</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores reprehenderit repellendus.</p>
+
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
