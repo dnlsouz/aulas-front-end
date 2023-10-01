@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <style>
         /* Alterando o Box Model para Todos os elementos da página(por isso usamos o seletor asterisco) */
-        * {box-sizing: border-box;}
+        * {
+            box-sizing: border-box;
+        }
 
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-        img {max-width: 100%;}
+        img {
+            max-width: 100%;
+        }
 
-        article { 
+        article {
             padding: 8px;
             border: solid 1px;
             width: 30%;
         }
 
-        article:first-child {background: blue;}
-        article:nth-child(2) {background: yellow;}
-        article:last-child {background: palevioletred;}
+        article:first-child {
+            background: blue;
+        }
 
-        
-        
+        article:nth-child(2) {
+            background: yellow;
+        }
+
+        article:last-child {
+            background: palevioletred;
+        }
+
+
+
         /* Flex Container */
         .cards {
             display: flex;
@@ -42,40 +57,42 @@
             /* gap: 12px; */
             background-color: aquamarine
         }
-
     </style>
 
 </head>
+
 <body>
     <h1>Flexbox</h1>
     <hr>
-    <p> Flexbox é um mecanismo CSS que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuição  de elementos no HTML. muito util ma elaboração de layouts.</p>
+    <p> Flexbox é um mecanismo CSS que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuição de
+        elementos no HTML. muito util ma elaboração de layouts.</p>
 
 
     <div class="cards">
-    <article>
-        <img src="imagens/mini-apple.jpg" alt="">
-        <h2>Apple</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, ad.</p>
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, ad.</p>
 
-    </article>
+        </article>
 
-    <article>
-        <img src="imagens/mini-ibm.jpg" alt="">
-        <h2>IBM</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, ad.</p>
-        
-    </article>
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, ad.</p>
 
-    <article>
-        <img src="imagens/mini-microsoft.jpg" alt="">
-        <h2>Microsoft</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, ad.</p>
+        </article>
 
-        
-    </article>
-</div>
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, ad.</p>
 
-    
+
+        </article>
+    </div>
+
+
 </body>
+
 </html>
